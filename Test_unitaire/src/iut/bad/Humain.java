@@ -49,7 +49,7 @@ public class Humain implements Consommation {
         ami.amis.add(this);
     }
     
-    public void ami(Humain ami) {
+    public void ami1(Humain ami) {
         ami(ami, 100); 
     }
 
