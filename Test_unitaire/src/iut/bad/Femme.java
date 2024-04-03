@@ -1,15 +1,15 @@
 package iut.bad;
 
-public class Homme {
-	
+public class Femme {
+    
     private String nom;
     private String prenom;
     private int age;
     
-    public Homme() {
+    public Femme() {
     }
     
-    public Homme(String nom, String prenom, int age) {
+    public Femme(String nom, String prenom, int age) {
         this.nom = nom;
         this.prenom = prenom;
         this.age = age;
@@ -39,3 +39,4 @@ public class Homme {
         this.age = age;
     }
 }
+
