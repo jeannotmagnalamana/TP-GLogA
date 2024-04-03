@@ -1,17 +1,23 @@
 package iut.bad;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Humain implements Consommation {
     protected String nom;
     protected String prenom;
     protected int age;
+    protected List<Humain> amis;
     
     public Humain() {
+    	amis = new ArrayList<>();
     }
     
     public Humain(String nom, String prenom, int age) {
         this.nom = nom;
         this.prenom = prenom;
         this.age = age;
+        amis = new ArrayList<>();
     }
 
     public String getNom() {
@@ -36,6 +42,11 @@ public class Humain implements Consommation {
 
     public void setAge(int age) {
         this.age = age;
+    }
+    
+    public void ami(Humain ami) {
+        amis.add(ami);
+        ami.amis.add(this);
     }
     
     public void details() {
