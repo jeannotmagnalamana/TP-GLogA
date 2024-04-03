@@ -1,10 +1,10 @@
 package iut.bad;
 
 public class Humain {
-    
-    private String nom;
-    private String prenom;
-    private int age;
+
+	protected String nom;
+    protected String prenom;
+    protected int age;
     
     public Humain() {
     }
@@ -39,8 +39,8 @@ public class Humain {
         this.age = age;
     }
     
-    public void details() {
-        System.out.println("Nom: " + nom + ", Prénom: " + prenom + ", Âge: " + age);
+    @Override
+    public String toString() {
+        return "Nom: " + nom + ", Prénom: " + prenom + ", Âge: " + age;
     }
 }
-
